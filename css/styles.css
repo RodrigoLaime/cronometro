@@ -3,9 +3,11 @@
   padding: 0;
   margin: 0;
 }
+
 html {
   height: 100%;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -15,6 +17,7 @@ body {
   font-family: sans-serif;
   background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
 }
+
 .container {
   display: flex;
   flex-direction: column;
@@ -29,14 +32,17 @@ body {
   -moz-box-shadow: 0px 0px 50px 16px rgba(0, 71, 255, 0.8);
   background: radial-gradient(circle, rgba(0, 136, 255, 0) 0%, #0048ff9f);
 }
+
 .container span {
   font-size: 45px;
 }
+
 .clock {
   font-size: 17px;
   text-shadow: -1px 0 15px rgba(0, 0, 0);
   color: lightgray;
 }
+
 .number {
   display: inline-block;
   width: 45px;
@@ -45,28 +51,41 @@ body {
   color: lightgray;
   background: transparent;
 }
+
 .buttons button {
   margin: 10px 5px;
   padding: 20px;
   border-radius: 50%;
-  border: 2px solid white;
+  border: 2px solid lightgray;
   background-color: transparent;
 }
+
 #play {
   background-image: url("../img/play_circle_FILL0_wght400_GRAD0_opsz48.png");
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.2s;
 }
+
 #play:active {
   background-color: white;
 }
+
 #stop {
   background-image: url("../img/stop_circle_FILL0_wght400_GRAD0_opsz48.png");
   background-position: center;
   background-repeat: no-repeat;
   transition: 0.2s;
 }
+
 #stop:active {
   background-color: white;
+}
+
+figure {
+  text-align: center;
+  width: 300px;
+  height: 320px;
+  background: radial-gradient(circle, rgb(251, 255, 0), transparent 70%, transparent);
+  border-radius: 50%;
 }
